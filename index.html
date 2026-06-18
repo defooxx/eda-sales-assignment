@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EDA Projects</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="hero">
+    <button id="gameToggle" class="game-mode-btn">
+      <span class="game-dot"></span>
+      GAME MODE
+    </button>
+
+    <div class="sparkle">✦ ✧ ✦</div>
+
+    <h1>Exploratory Data Analysis Projects</h1>
+    <p>Two soft little data stories: Sales Records + Mental Health Depression Disorder</p>
+  </header>
+
+  <main>
+    <section class="project-card">
+      <div class="tag">Project 1</div>
+      <h2>📊 Sales Records EDA</h2>
+      <p>
+        This project analyses a sales records dataset containing 500,000 transactions.
+        The analysis includes data preparation, cleaning, missing value checks,
+        duplicate checks, outlier detection, correlation analysis, and visual insights.
+      </p>
+
+      <div class="buttons">
+        <a href="notebooks/sales_eda.ipynb" target="_blank">View Notebook</a>
+        <a href="data/Sales Records.csv.xlsx" target="_blank">View Dataset</a>
+      </div>
+    </section>
+
+    <section class="project-card">
+      <div class="tag">Project 2</div>
+      <h2>🧠 Mental Health Depression Disorder EDA</h2>
+      <p>
+        This project analyses a mental health depression disorder dataset with
+        country-year records. The analysis explores depression, anxiety, bipolar disorder,
+        eating disorders, and other mental health indicators.
+      </p>
+
+      <div class="buttons">
+        <a href="notebooks/mental_health_disorder_eda.ipynb" target="_blank">View Notebook</a>
+        <a href="data/Mental health Depression disorder Data.csv" target="_blank">View Dataset</a>
+      </div>
+    </section>
+
+    <section class="summary-card">
+      <h2>🌷 Key Work Completed</h2>
+      <ul>
+        <li>Loaded datasets using Pandas</li>
+        <li>Checked rows, columns, data types, and target variables</li>
+        <li>Handled missing values and duplicate records</li>
+        <li>Detected outliers using the IQR method</li>
+        <li>Created histograms, bar charts, heatmaps, scatter plots, and pair plots</li>
+        <li>Summarised findings and possible machine learning questions</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with Python, Pandas, Matplotlib, Seaborn & a little bit of sparkle ✨</p>
+  </footer>
+
+  <section id="gameSection" class="game-section">
+    <div class="game-header">
+      <h2>🎮 Game Mode</h2>
+      <p>Help the tiny data buddy climb the pastel data stairs and reach EDA!</p>
+    </div>
+
+    <canvas id="edaGame" width="1000" height="360"></canvas>
+
+    <p id="gameMessage" class="game-message">
+      Use ← → to move and Space to jump. Reach the goal to win!
+    </p>
+  </section>
+
+  <script src="game.js"></script>
+</body>
+</html>
