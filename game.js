@@ -219,9 +219,9 @@ function drawStatusText() {
   ctx.fillStyle = "#6b4c9a";
   ctx.font = "15px Arial";
 
-  if (!gameWon && !gameLost) {
-    ctx.fillText("Climb the data stairs to reach EDA ✨", 30, 30);
-  }
+  ///if (!gameWon && !gameLost) {
+  ///  ctx.fillText("Climb the data stairs to reach EDA ✨", 30, 30);
+  ///}
 
   if (gameWon) {
     // Clear message box
