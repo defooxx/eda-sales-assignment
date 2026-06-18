@@ -20,7 +20,7 @@ body {
 .hero {
   position: relative;
   text-align: center;
-  padding: 70px 20px 80px;
+  padding: 76px 20px 82px;
   background: linear-gradient(135deg, #ffd6e8, #d8c7ff, #c7e9ff);
   color: #3d314a;
   border-bottom-left-radius: 45px;
@@ -28,16 +28,23 @@ body {
   overflow: hidden;
 }
 
-.sparkle {
-  font-size: 24px;
+.hero-label {
+  display: inline-block;
+  font-size: 13px;
   margin-bottom: 22px;
-  color: #8f6bbd;
+  color: #6b4c9a;
+  background: rgba(255, 255, 255, 0.45);
+  padding: 7px 16px;
+  border-radius: 999px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
 .hero h1 {
-  font-size: 48px;
-  margin-bottom: 18px;
-  letter-spacing: 0.5px;
+  font-size: 42px;
+  margin-bottom: 16px;
+  letter-spacing: 0.3px;
   font-weight: 800;
 }
 
@@ -45,39 +52,39 @@ body {
   font-size: 18px;
   max-width: 760px;
   margin: 0 auto;
-  opacity: 0.9;
+  opacity: 0.92;
 }
 
-/* GAME BUTTON IN HEADER */
+/* INTERACTIVE BONUS BUTTON */
 
 .game-mode-btn {
   position: absolute;
   top: 28px;
   left: 34px;
-  background: rgba(255, 255, 255, 0.38);
+  background: rgba(255, 255, 255, 0.42);
   color: #5d4b7a;
-  border: 2px solid rgba(110, 80, 150, 0.18);
-  padding: 9px 18px;
+  border: 1px solid rgba(110, 80, 150, 0.2);
+  padding: 9px 16px;
   border-radius: 999px;
-  font-size: 11px;
-  letter-spacing: 2px;
+  font-size: 10px;
+  letter-spacing: 1.6px;
   font-weight: bold;
   cursor: pointer;
   backdrop-filter: blur(8px);
-  box-shadow: 0 10px 24px rgba(130, 90, 160, 0.14);
+  box-shadow: 0 8px 20px rgba(130, 90, 160, 0.12);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .game-mode-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 30px rgba(130, 90, 160, 0.22);
+  box-shadow: 0 12px 26px rgba(130, 90, 160, 0.2);
 }
 
 .game-dot {
   display: inline-block;
   width: 8px;
   height: 8px;
-  background: #9a73d9;
+  background: #7b5bb3;
   border-radius: 50%;
   margin-right: 8px;
 }
@@ -92,35 +99,35 @@ main {
 
 .project-card,
 .summary-card {
-  background: rgba(255, 255, 255, 0.88);
+  background: rgba(255, 255, 255, 0.9);
   padding: 32px;
   margin-bottom: 28px;
-  border-radius: 28px;
+  border-radius: 24px;
   border: 1px solid #f0d8ff;
-  box-shadow: 0 12px 30px rgba(150, 100, 170, 0.14);
+  box-shadow: 0 12px 30px rgba(150, 100, 170, 0.12);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project-card:hover,
 .summary-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 16px 36px rgba(150, 100, 170, 0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 16px 36px rgba(150, 100, 170, 0.18);
 }
 
 .tag {
   display: inline-block;
-  background: #ffe6f2;
-  color: #8f4f7f;
+  background: #f4e8ff;
+  color: #6b4c9a;
   padding: 6px 14px;
   border-radius: 999px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
   margin-bottom: 14px;
 }
 
 .project-card h2,
 .summary-card h2 {
-  color: #6b4c9a;
+  color: #5d3c99;
   margin-bottom: 15px;
   font-size: 26px;
 }
@@ -137,20 +144,21 @@ main {
 .buttons a {
   display: inline-block;
   text-decoration: none;
-  background: linear-gradient(135deg, #ff9ecf, #a98bff);
+  background: linear-gradient(135deg, #7b5bb3, #a98bff);
   color: white;
-  padding: 12px 20px;
+  padding: 11px 18px;
   border-radius: 999px;
   margin-right: 10px;
   margin-top: 10px;
   font-weight: bold;
-  box-shadow: 0 8px 18px rgba(169, 139, 255, 0.25);
+  font-size: 14px;
+  box-shadow: 0 8px 18px rgba(169, 139, 255, 0.22);
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
 .buttons a:hover {
-  transform: scale(1.04);
-  opacity: 0.9;
+  transform: scale(1.03);
+  opacity: 0.92;
 }
 
 ul {
@@ -173,7 +181,7 @@ footer {
   border-top-right-radius: 35px;
 }
 
-/* GAME SECTION AT BOTTOM */
+/* INTERACTIVE BONUS SECTION */
 
 .game-section {
   max-width: 1100px;
@@ -182,19 +190,20 @@ footer {
   border-radius: 28px;
   background: linear-gradient(135deg, #ffe6f5, #efe3ff, #dff3ff);
   border: 1px solid #f0c7ea;
-  box-shadow: 0 16px 38px rgba(150, 100, 170, 0.16);
+  box-shadow: 0 16px 38px rgba(150, 100, 170, 0.14);
   text-align: center;
 }
 
 .game-header h2 {
-  color: #6b4c9a;
-  font-size: 28px;
+  color: #5d3c99;
+  font-size: 24px;
   margin-bottom: 6px;
 }
 
 .game-header p {
   color: #5d4b7a;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
+  max-width: 680px;
 }
 
 #edaGame {
@@ -210,9 +219,9 @@ footer {
   display: inline-block;
   padding: 10px 18px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.55);
-  color: #7b5bb3;
-  border: 1px solid rgba(160, 110, 190, 0.18);
+  background: rgba(255, 255, 255, 0.7);
+  color: #5d3c99;
+  border: 1px solid rgba(160, 110, 190, 0.2);
   font-weight: bold;
 }
 
@@ -220,7 +229,7 @@ footer {
 
 @media (max-width: 768px) {
   .hero {
-    padding: 90px 20px 70px;
+    padding: 92px 20px 70px;
   }
 
   .hero h1 {
@@ -234,8 +243,14 @@ footer {
   .game-mode-btn {
     top: 22px;
     left: 20px;
-    padding: 10px 18px;
-    font-size: 12px;
-    letter-spacing: 2px;
+    padding: 8px 14px;
+    font-size: 9px;
+    letter-spacing: 1.3px;
+  }
+
+  .project-card,
+  .summary-card,
+  .game-section {
+    padding: 24px;
   }
 }

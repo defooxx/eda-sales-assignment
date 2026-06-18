@@ -234,10 +234,10 @@ function drawStatusText() {
 
     ctx.fillStyle = "#5d3c99";
     ctx.font = "bold 25px Arial";
-    ctx.fillText("You win! Data buddy reached EDA 💗", 310, 188);
+    ctx.fillText("Success! You reached EDA.", 335, 190);
 
     ctx.font = "15px Arial";
-    ctx.fillText("Press Space or GAME MODE to play again.", 350, 215);
+    ctx.fillText("Press Space to play again.", 350, 218);
   }
 
   if (gameLost) {
@@ -255,7 +255,7 @@ function drawStatusText() {
 
     ctx.fillStyle = "#6b4c9a";
     ctx.font = "15px Arial";
-    ctx.fillText("Press Space or GAME MODE to restart.", 370, 218);
+    ctx.fillText("Reach the EDA goal", 30, 30);
   }
 }
 
@@ -308,7 +308,7 @@ function updatePlayer() {
 
   if (player.y > canvas.height + 30) {
     gameLost = true;
-    gameMessage.textContent = "You lose, try again! Press Space or GAME MODE to restart.";
+    gameMessage.textContent = "Use ← → to move and Space to jump. Reach the EDA goal.";
     drawFrame();
     stopGame();
   }
@@ -321,7 +321,7 @@ function updatePlayer() {
 
   if (reachedGoal) {
     gameWon = true;
-    gameMessage.textContent = "You win! Data buddy reached EDA. Press Space or GAME MODE to play again.";
+    gameMessage.textContent = "You win! Data buddy reached EDA. Press Space to play again.";
     drawFrame();
     stopGame();
   }
